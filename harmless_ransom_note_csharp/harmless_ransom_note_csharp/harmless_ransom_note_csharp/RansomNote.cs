@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,7 +15,8 @@ namespace harmless_ransom_note_csharp
             string[] noteArr = NoteText.Split(' ');
             string[] magazineArr = MagazineText.Split(' ');
             //need to make magazine object
-            var magazineObj = "";
+            // var magazineObj;
+            Hashtable magazineObj = new Hashtable();
 
             foreach (string word in magazineArr)
             {
