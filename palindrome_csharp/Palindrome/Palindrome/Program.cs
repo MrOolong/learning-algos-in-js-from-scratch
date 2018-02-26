@@ -10,7 +10,7 @@ namespace Palindrome
     {
         static void Main(string[] args)
         {
-
+            
         }
     }
 }
