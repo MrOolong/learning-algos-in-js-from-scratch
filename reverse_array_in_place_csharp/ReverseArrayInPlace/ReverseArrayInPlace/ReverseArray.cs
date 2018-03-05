@@ -8,9 +8,15 @@ namespace ReverseArrayInPlace
 {
     class ReverseArray
     {
-        public void ReverseArrayMethod(int [] arr)
+        public Array ReverseArrayMethod(int [] arr)
         {
-
+            for (var i = 0; i < arr.Length / 2; i++)
+            {
+                var tempVar = arr[i];
+                arr[i] = arr[arr.Length - 1 - i];
+                arr[arr.Length - 1 - i] = tempVar;
+            }
+            return arr;
         }
     }
 }
