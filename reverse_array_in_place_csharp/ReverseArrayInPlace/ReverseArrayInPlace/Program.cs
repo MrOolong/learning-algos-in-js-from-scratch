@@ -15,9 +15,12 @@ namespace ReverseArrayInPlace
             //Console.WriteLine("Enter an array of numbers delimited by commas");
             //var input = Console.ReadLine();
             //Console.WriteLine(input);
-            var output = ra1.ReverseArrayMethod(int[1,2,3]);
+            var output = ra1.ReverseArrayMethod(new int[]{ 1,2,3,4});
             //var output = ra1.ReverseArrayMethod
-            //Console.WriteLine(output);
+            foreach(var item in output)
+            {
+                Console.WriteLine(output.ToString());
+            }
         }
     }
 }
